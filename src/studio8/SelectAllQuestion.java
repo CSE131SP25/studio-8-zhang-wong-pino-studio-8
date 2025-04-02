@@ -3,6 +3,11 @@ package studio8;
 import support.cse131.NotYetImplementedException;
 
 public class SelectAllQuestion extends MultipleChoiceQuestion {
+	
+	private String prompt;
+	private String answer;
+	private int points;
+	private String[] choices;
 
 	/**
 	 * Constructor
@@ -11,9 +16,9 @@ public class SelectAllQuestion extends MultipleChoiceQuestion {
 	 * @param answer
 	 * @param choices
 	 */
-	public SelectAllQuestion(String prompt, String answer, String[] choices) {
+	public SelectAllQuestion(String prompt, String answer, int points, String[] choices) {
 		// Hint: 1 point per choice
-		throw new NotYetImplementedException();
+		super(prompt, answer, points, choices);
 	}
 	
 	/**
@@ -21,7 +26,15 @@ public class SelectAllQuestion extends MultipleChoiceQuestion {
 	 * @param String givenAnswer to check for points
 	 */
 	public int checkAnswer(String givenAnswer) {
-		throw new NotYetImplementedException();
+		int count = 0;
+		for (int i = 0; i < givenAnswer.length(); i++) {
+			if (String.charAt(i) == -1) {
+				
+			}
+		}
+		for
+		
+		return (this.choices) - (this.findIncorrectGivenAnswers(givenAnswer) - (this.findMissingCorrectAnswers(givenAnswer));
 	}
 
 	/**

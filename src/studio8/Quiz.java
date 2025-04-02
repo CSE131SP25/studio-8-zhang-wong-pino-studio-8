@@ -6,6 +6,8 @@ import support.cse131.NotYetImplementedException;
 
 public class Quiz {
 	
+	private Question[] questions;
+	
 	/**
 	 * Constructor
 	 * @param questions
@@ -46,6 +48,6 @@ public class Quiz {
 	
 	
 	public static void main(String[] args) {
-		// TODO: Make your own Quiz!
+		Quiz qz = new Quiz (null);
 	}
 }
